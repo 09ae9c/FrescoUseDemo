@@ -3,6 +3,7 @@ package com.tc.frescousedemo;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import com.facebook.drawee.generic.RoundingParams;
@@ -17,12 +18,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initViews();
 
-        //从网络下载图片显示
-        Uri imgUrl = Uri.parse("https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png");
-        urlImg.setImageURI(imgUrl);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Uri imgUrl = Uri.parse("https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png");
 
-        //显示圆形图片
-        circleImg.setImageURI(imgUrl);
+                //从网络下载图片显示
+                urlImg.setImageURI(imgUrl);
+
+                //显示圆形图片
+                circleImg.setImageURI(imgUrl);
+            }
+        }, 9000);
+
 
         //代码中设置圆角
 //        RoundingParams bitmapOnlyParams = RoundingParams.fromCornersRadius(40)
