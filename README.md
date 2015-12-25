@@ -1,2 +1,5 @@
 # FrescoUseDemo
-a simple demo show how to use the fresco
+
+Rounded corners image
+
+![run](https://raw.githubusercontent.com/tancen94/FrescoUseDemo/master/preview/run.gif)
