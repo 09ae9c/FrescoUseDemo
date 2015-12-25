@@ -1,51 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#444444"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:paddingTop="16dp"
+    android:orientation="horizontal">
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/sdv_image_url"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="8dp"
-        fresco:placeholderImage="@mipmap/img_test"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/sdv_image_circle"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="8dp"
-        fresco:placeholderImage="@mipmap/img_test"
-        fresco:roundAsCircle="true"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_image_url"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            fresco:placeholderImage="@mipmap/img_test"/>
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/sdv_image_round"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="8dp"
-        fresco:placeholderImage="@mipmap/img_test"
-        fresco:roundBottomLeft="false"
-        fresco:roundedCornerRadius="20dp"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_image_circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            fresco:placeholderImage="@mipmap/img_test"
+            fresco:roundAsCircle="true"/>
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/sdv_image_diff_round"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="8dp"
-        fresco:placeholderImage="@mipmap/img_test"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_image_round"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            fresco:placeholderImage="@mipmap/img_test"
+            fresco:roundBottomLeft="false"
+            fresco:roundedCornerRadius="20dp"/>
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/sdv_image_lay"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="8dp"
-        fresco:placeholderImage="@mipmap/img_test"
-        fresco:roundWithOverlayColor="#0000ff"
-        fresco:roundedCornerRadius="20dp"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_image_diff_round"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            fresco:placeholderImage="@mipmap/img_test"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_image_lay"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            fresco:placeholderImage="@mipmap/img_test"
+            fresco:roundWithOverlayColor="#0000ff"
+            fresco:roundedCornerRadius="20dp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleDraweeView"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.tc.view.BitmapOnlyRoundView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/img_test"/>
+
+        <com.tc.view.BitmapOnlyRoundView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/img_test"
+            app:isCircle="true"/>
+
+        <com.tc.view.BitmapOnlyRoundView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/img_test"
+            app:round_radius="20dp"/>
+
+        <com.tc.view.BitmapOnlyRoundView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/img_test"
+            app:bottom_left_radius="200dp"
+            app:bottom_right_radius="150dp"
+            app:top_left_radius="50dp"
+            app:top_right_radius="100dp"/>
+
+        <com.tc.view.OverLayRoundView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            app:O_round_radius="20dp"
+            app:O_overlay_color="#ffffff"
+            android:src="@mipmap/img_test"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CustomView"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
 
 </LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BitmapOnlyRoundView">
+        <attr name="isCircle" format="boolean"/>
+        <attr name="round_radius" format="dimension"/>
+        <attr name="top_left_radius" format="dimension"/>
+        <attr name="top_right_radius" format="dimension"/>
+        <attr name="bottom_left_radius" format="dimension"/>
+        <attr name="bottom_right_radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="OverLayRoundView">
+        <attr name="O_isCircle" format="boolean"/>
+        <attr name="O_overlay_color" format="color"/>
+        <attr name="O_round_radius" format="dimension"/>
+        <attr name="O_top_left_radius" format="dimension"/>
+        <attr name="O_top_right_radius" format="dimension"/>
+        <attr name="O_bottom_left_radius" format="dimension"/>
+        <attr name="O_bottom_right_radius" format="dimension"/>
+    </declare-styleable>
+</resources>
