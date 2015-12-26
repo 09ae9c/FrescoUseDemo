@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
 import com.facebook.drawee.generic.RoundingParams;
 import com.facebook.drawee.view.SimpleDraweeView;
@@ -55,5 +56,8 @@ public class MainActivity extends AppCompatActivity {
         roundImg = (SimpleDraweeView) findViewById(R.id.sdv_image_round);
         diffRoundImg = (SimpleDraweeView) findViewById(R.id.sdv_image_diff_round);
         layRoundImg = (SimpleDraweeView) findViewById(R.id.sdv_image_lay);
+
+//        ImageView clipImg= (ImageView) findViewById(R.id.clip_img);
+//        clipImg.setClipToOutline(true);
     }
 }

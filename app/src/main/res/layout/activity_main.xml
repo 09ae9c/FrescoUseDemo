@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#444444"
-    android:paddingTop="16dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:paddingTop="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,9 +57,9 @@
             fresco:roundedCornerRadius="20dp"/>
 
         <TextView
-            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="SimpleDraweeView"
             android:textColor="#ffffff"/>
     </LinearLayout>
@@ -102,17 +102,52 @@
             app:top_right_radius="100dp"/>
 
         <com.tc.view.OverLayRoundView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            app:O_round_radius="20dp"
-            app:O_overlay_color="#ffffff"
-            android:src="@mipmap/img_test"/>
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/img_test"
+        app:O_overlay_color="#ffffff"
+        app:O_round_radius="20dp"/>
+
+        <!--<com.tc.view.RoundRelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:radius="20dp">-->
+        <!--<ImageView-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:src="@mipmap/img_test"/>-->
+        <!--</com.tc.view.RoundRelativeLayout>-->
+
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:padding="6dp"-->
+                <!--android:src="@mipmap/img_test"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:src="@drawable/frame"/>-->
+        <!--</FrameLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/clip_img"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:src="@mipmap/img_test"-->
+            <!--android:background="@drawable/round_corners"/>-->
 
         <TextView
-            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="CustomView"
             android:textColor="#ffffff"/>
     </LinearLayout>
